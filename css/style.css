@@ -1,7 +1,19 @@
 body, html {
   height: 100%;
   margin: 0;
-  overflow-x: hidden;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("../img/placeholder.jpeg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #home {
@@ -23,18 +35,14 @@ body, html {
 .main-home {
   width: 100%;
   height: 100vh;
-  /* The image used */
-  background-image: url("../img/placeholder.jpeg");
-
-  /* Full height */
-  height: 100%;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .menu {
   transform: rotate(90deg);
+transform-origin: right, top;
+-ms-transform: rotate(90deg);
+-ms-transform-origin:right, top;
+-webkit-transform: rotate(90deg);
+-webkit-transform-origin:right, top;
+position: absolute;
 }
