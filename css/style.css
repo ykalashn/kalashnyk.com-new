@@ -36,13 +36,9 @@ body, html {
   width: 100%;
   height: 100vh;
 }
-
-.menu {
+.nav-custom- h5 {
+  position: absolute;
   transform: rotate(90deg);
-transform-origin: right, top;
--ms-transform: rotate(90deg);
--ms-transform-origin:right, top;
--webkit-transform: rotate(90deg);
--webkit-transform-origin:right, top;
-position: absolute;
+  transform-origin: left bottom 0;
+  display: block;
 }
