@@ -21,6 +21,7 @@ body, html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  z-index: 999;
 }
 
 #home {
@@ -46,8 +47,8 @@ body, html {
 
 .menu h3 {
   position: absolute;
-  transform: rotate(90deg);
-  transform-origin: left bottom 0;
+  /* transform: rotate(90deg); */
+  /* transform-origin: left bottom 0; */
   display: block;
 }
 
@@ -61,31 +62,59 @@ body, html {
   overflow: hidden;
 }
 
-/* Navigation */
-.overlay {
-  height: 100%;
-  width: 0;
-  position: fixed;
+/* Logo */
+.yev {
+  position: sticky;
   z-index: 1000;
+}
+
+/* Menu */
+
+#menu-overlay {
+  position: fixed;
   top: 0;
   left: 0;
-  background-color: #000;
-  overflow-x: hidden;
+  bottom: 0;
+  right: 0;
+  background: red;
+  display: flex;
+  overflow-y: auto;
+  transform: scale(0);
   transition: 0.5s;
+  z-index: 99;
 }
 
-.overlay-content {
-  position: relative;
-  width: 100%;
+#menu-overlay.active {
+  transform: scale(1);
 }
 
-.overlay a:hover, .overlay a:focus {
-  color: #7EE1D6;
+#menu-overlay nav a {
+  color: white;
 }
-
-.overlay .closebtn {
+#menu-overlay nav a:hover {
+  color: yellow;
+}
+.menu h3 {
   position: absolute;
+  transform: rotate(90deg);
+  transform-origin: left bottom 0;
+  display: block;
 }
+#toggleIcon {
+  position: fixed;
+  width: auto;
+  z-index: 100;
+  cursor: pointer;
+}
+#toggleIcon.active span {
+  display: none;
+}
+
+#toggleIcon.active>h3:after {
+  content: 'Close';
+}
+
+
 
 
 
