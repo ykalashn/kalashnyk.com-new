@@ -8,6 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/style.css">
+    <script type="text/javascript" src="js/custom.js"></script>
 
 
     <title>Hello, world!</title>
@@ -15,23 +16,40 @@
   <body>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-12 col-lg-6 ">
-          <div class="row justify-content-between">
-            <div class="col-11 pl-3 pt-3">
-              <h1>Yevhenii<br>Kalashnyk</h1>
-            </div>
-            <div class="col-1 menu p-0 pl-md-3 pb-lg-4">
-                <h3>menu</h3>
-            </div>
-          </div>
+        <div class="col-11 col-lg-5">
           <div class="row">
-            <!-- Hidden nav -->
+            <div class="col-11 pl-3 pt-3">
+              <h1 class="display-3">Yevhenii<br>Kalashnyk</h1>
+            </div>
           </div>
+            <div id="myNav" class="overlay">
+              <a href="javascript:void(0)" class="closebtn" id="closeNav"><h3>Close</h3></a>
+              <div class="overlay-content">
+                <div class="row fixed-row-bottom">
+                  <div class="col pb-3 pl-3">
+                    <nav class="nav flex-column h1">
+                      <a class="nav-link px-0" href="#">LinkedIn</a>
+                      <a class="nav-link px-0" href="#">GitHub</a>
+                      <a class="nav-link px-0" href="#">Instagram</a>
+                      <a class="nav-link px-0" href="#">Twitter</a>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           <div class="row fixed-row-bottom">
             <div class="col pb-3 pl-3">
-              <h2>I design <del>websites</del> <br> web experiences</h2>
+              <h1>I design <del>websites</del> <br> web experiences</h1>
             </div>
           </div>
+        </div>
+        <div class="col-1 menu p-0 pl-md-4">
+          <!-- <div class="fixed-action-btn"> -->
+            <a class="btn" id="openNav">
+              <h3>Menu</h3>
+            </a>
+          <!-- </div> -->
         </div>
         <div class="d-none d-lg-block col-lg-6 px-0">
           <div id="home" class="main-home bg">
@@ -41,6 +59,8 @@
     </div>
 
     <!-- Optional JavaScript -->
+
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
