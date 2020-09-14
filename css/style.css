@@ -9,6 +9,7 @@ body, html {
   margin: 0;
   font-family: 'Circular';
   color: black;
+  overflow: hidden; 
 }
 
 /* RIGHT SIDE */
