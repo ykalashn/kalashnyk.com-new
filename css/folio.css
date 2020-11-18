@@ -1,0 +1,146 @@
+@font-face {
+  font-family: 'Circular';
+  src: url("../fonts/CircularStd-Bold.otf");
+}
+
+:root {
+  --h1-font-size: calc(10vw);
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Circular';
+  color: black;
+  overflow-x: hidden;
+}
+
+.logo h1 {
+  font-size: calc(1.6vw + 1rem);
+}
+
+h1 {
+  font-size: var(--h1-font-size);
+}
+
+h2 {
+  font-size: calc(var(--h1-font-size)/2);
+}
+
+p {
+  font-size: calc(var(--h1-font-size)/1.5 - 4vw);
+}
+
+.section-align {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section-align-top {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.rightside {
+  background: #f5f5f5;
+  height: 100vh;
+  z-index: 2;
+  background-position: center center;
+  text-align: center;
+}
+
+.leftside {
+  padding-left: 4%;
+}
+
+img {
+  height: 80vh;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.fixed {
+  position: fixed;
+  z-index: 999;
+}
+
+#roles p {
+  font-size: calc(var(--h1-font-size) - 7vw);
+}
+
+.role-icon {
+  height: calc(3vw + 3rem);
+  width: calc(3vw + 3rem);
+  position: relative;
+  -webkit-mask-size: contain;
+          mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  bottom: 0;
+  background-image: -webkit-gradient(linear, left top, right top, from(#f9717e), to(#fca747));
+  background-image: linear-gradient(90deg, #f9717e, #fca747);
+  background-color: #f9717e;
+  margin-top: 5%;
+}
+
+.ux-ui-designer {
+  -webkit-mask-image: url(../img/ux-ui-designer.svg);
+          mask-image: url(../img/ux-ui-designer.svg);
+  background-image: -webkit-gradient(linear, left top, right top, from(#b782e0), to(#f8707f));
+  background-image: linear-gradient(90deg, #b782e0, #f8707f);
+  background-color: #b782e0;
+}
+
+.speaker {
+  -webkit-mask-image: url(../img/speaker.svg);
+          mask-image: url(../img/speaker.svg);
+  background-image: -webkit-gradient(linear, left top, right top, from(#b782e0), to(#f8707f));
+  background-image: linear-gradient(90deg, #b782e0, #f8707f);
+  background-color: #b782e0;
+}
+
+.product-designer {
+  -webkit-mask-image: url(../img/product-designer.svg);
+          mask-image: url(../img/product-designer.svg);
+  background-image: -webkit-gradient(linear, left top, right top, from(#b782e0), to(#f8707f));
+  background-image: linear-gradient(90deg, #b782e0, #f8707f);
+  background-color: #b782e0;
+}
+
+.marketing {
+  -webkit-mask-image: url(../img/marketing.svg);
+          mask-image: url(../img/marketing.svg);
+  background-image: -webkit-gradient(linear, left top, right top, from(#b782e0), to(#f8707f));
+  background-image: linear-gradient(90deg, #b782e0, #f8707f);
+  background-color: #b782e0;
+}
+
+.role {
+  text-align: left;
+}
+
+@media only screen and (max-width: 500px) {
+  :root {
+    --h1-font-size: calc(5.4vh + 4vw);
+  }
+  #roles p {
+    font-size: calc(var(--h1-font-size)/1.15 - 7vw);
+  }
+}
+/*# sourceMappingURL=folio.css.map */

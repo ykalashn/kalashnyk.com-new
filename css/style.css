@@ -9,12 +9,13 @@ body, html {
   margin: 0;
   font-family: 'Circular';
   color: black;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 /* RIGHT SIDE */
 
 .bg {
+  background: #f5f5f5;
   background-image: url("../img/placeholder.jpg");
   height: 100%;
   background-position: center;
@@ -75,13 +76,13 @@ body, html {
   background: #fec33f;
   display: flex;
   overflow-y: auto;
-  transform: scale(0);
+  transform: translate(0, -100%);
   transition: 0.5s;
   z-index: 99;
 }
 
 #menu-overlay.active {
-  transform: scale(1);
+  transform: translate(0, 0);
 }
 
 #menu-overlay nav a {
@@ -100,6 +101,7 @@ body, html {
 .menu h3:hover {
   color: #fec33f;
 }
+
 #toggleIcon {
   position: fixed;
   width: auto;
@@ -117,5 +119,4 @@ body, html {
 
 #toggleIcon.active>h3:hover {
   color: #fff;
-
 }
