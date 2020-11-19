@@ -4,13 +4,16 @@ src: url("../fonts/CircularStd-Bold.otf");
 }
 
 :root {
-    --h1-font-size: calc(10vw);
+    --intro-headline: 10vw;
+    --headline-font-size: 80px;
+    --headline-reduced: 32px;
+    --link-font-size: 28px;
 }
   
 body, html {
     height: 100%;
     margin: 0;
-    font-family: 'Circular';
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: black;
     overflow-x: hidden;
 }
@@ -18,21 +21,43 @@ body, html {
 // TYPOGRAPHY
 
 .logo h1 {
-    font-size: calc(1.6vw + 1rem);
+    font-size: 3vw;
 }
 
-h1 {
-    font-size: var(--h1-font-size);
+.intro {
+    font-size: var(--intro-headline);
+    font-weight: 700;
+    letter-spacing: -.003em;
+    line-height: 1.085;
 }
 
-h2 {
-    font-size: calc(var(--h1-font-size)/2);
+.intro-info {
+    font-weight: 600;
+    padding: 0 5%;
 }
 
-p {
-    font-size: calc(var(--h1-font-size)/1.5 - 4vw);
+.headline {
+    font-size: var(--headline-font-size);
+    line-height: 1.075;
+    font-weight: 700;
+    letter-spacing: -0.012em;
+    padding: 0 5%;
 }
 
+.headline-reduced {
+    font-size: var(--headline-reduced);
+}
+
+.btn-link {
+    line-height: 2;
+    font-weight: 400;
+    font-size: var(--link-font-size);
+}
+
+.btn-link svg {
+    vertical-align: sub;
+    width: calc(var(--link-font-size) * 0.685);
+}
 // Common
 
 .section-align {
@@ -50,19 +75,19 @@ p {
     justify-content: center;
 }
 
-.rightside {
-    background: #f5f5f5;
-    height: 100vh;
-    z-index: 2;
-    background-position: center center;
-    text-align: center;
-}
+// .rightside {
+//     background: #f5f5f5;
+//     height: 100vh;
+//     z-index: 2;
+//     background-position: center center;
+//     text-align: center;
+// }
 
-.leftside {
-    padding-left: 4%;
-}
+// .leftside {
+//     padding-left: 4%;
+// }
 
-img {
+#hero-img img {
     height: 80vh;
     display: block;
     margin-right: auto;
@@ -79,8 +104,16 @@ img {
 
 // ROLES
 
-#roles p {
-    font-size: calc(var(--h1-font-size) - 7vw);
+#roles .role {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.007em;
+    padding: 0 3%;
+    line-height: 1.143;
+    text-align: left;  
+    p {
+        margin-top: 13px;
+    }
 }
 
 .role-icon {
@@ -117,10 +150,6 @@ img {
     mask-image: url(../img/marketing.svg);
     background-image: linear-gradient(90deg, #b782e0, #f8707f);
     background-color: #b782e0;
-}
-
-.role {
-    text-align: left;
 }
 // .bg {
 //     background: #f5f5f5;
@@ -233,13 +262,70 @@ img {
 //     color: #fff;
 // }
 
-
-@media only screen and (max-width: 500px) {
+@media only screen and (min-width: 1440px) {
     :root {
-        --h1-font-size: calc(5.4vh + 4vw);
+        --intro-headline: 8vw;
+        --headline-font-size: 120px;
+        --link-font-size: 28px;
     }
 
-    #roles p {
-        font-size: calc(var(--h1-font-size)/1.15 - 7vw);
+    .intro-info {
+        padding: 0 10% 2%;
+        font-size: 32px;
+        line-height: 1.125;
+        letter-spacing: .004em;
+    }
+
+    .headline-reduced {
+        font-size: 60px;
+        line-height: 1;
+        font-weight: 600;
+        letter-spacing: -.018em;
+    }
+}
+
+@media only screen and (max-width: 1068px) {
+    :root {
+        --intro-headline: 13.5vw;
+        --headline-font-size: 40px;
+        --link-font-size: 28px;
+    }
+
+    .headline-reduced {
+        font-size: 32px;
+        line-height: 1.125;
+        font-weight: 500;
+        letter-spacing: .004em;
+    }
+}
+
+@media only screen and (max-width: 734px) {
+    :root {
+        --link-font-size: 21px;
+    }
+
+    .headline-reduced {
+        font-size: 25px;
+    }
+
+    .sub-intro {
+        padding: 0 2%;
+    }
+
+    .btn-link {
+        text-align: left;
+        padding: 0;
+    }
+
+    .about-btn {
+        text-align: left;
+    }
+
+    .intro-info {
+        padding: 3% 0;
+        text-align: left;
+        font-size: 24px;
+        line-height: 1.381;
+        letter-spacing: .011em;
     }
 }
