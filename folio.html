@@ -13,7 +13,7 @@
     <meta name="twitter:image" content="">
     <link rel="icon" type="image/svg+xml" sizes="128x128" href="./img/favicon.svg">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/folio.css">
+    <link rel="stylesheet" href="/scss/main.css">
   </head>
   <body>
     <!-- <div class="container-fluid">
@@ -69,8 +69,8 @@
     <section id="main" class="container-fluid section-align">
       <div class="row">
         <div class="col-12 hero">
-          <h1 class="intro">Tassu Passu</h1>
-          <p class="headline-reduced sub-intro">The first human-friendly password manager</p>
+          <h1 class="hero-headline">Tassu Passu</h1>
+          <p class="hero-subhead">The first human-friendly password manager.</p>
         </div>
       </div>
     </section>
@@ -86,14 +86,12 @@
     <section id="about" class="container-fluid section-align">
       <div class="row justify-content-center">
         <div class="col-11 col-md-9">
-          <p class="headline-reduced intro-info">Tassu Passu's solution is a password made of pictures, connected using a story. It is fun, creative and secure. Try out Tassu Passu demo with your mobile. You will create your Tassu Passu Story which you will soon be able to use to log in to different websites.</p>
+          <p class="hero-intro">Tassu Passu's solution for human-friendly password manager is a password made of pictures, connected using a story. It is fun, creative and secure. Try out Tassu Passu demo with your mobile. You will create your Tassu Passu Story which you will soon be able to use to log in to different websites.</p>
         </div>
-        <div class="col-11 about-btn">
+        <div class="col-11 hero-cta">
           <a href="#">
-            <button type="button" class="btn btn-link">
-              Visit Website
-              <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path></svg>
-            </button>
+            <span>Visit Website</span>
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path></svg>
           </a>
         </div>
       </div>
@@ -103,26 +101,28 @@
       <div class="row">
         <div class="col">
           <div class="row justify-content-center">
-            <p class="headline">My roles at Tassu Passu</p>
+            <div class="col-11">
+              <p class="section-headline">My roles at Tassu Passu</p>
+            </div>
           </div>
           <div class="row justify-content-center justify-content-md-around mt-4">
             <div class="w-100 my-md-4"></div>
             <div class="col-11 col-md-5 role">
               <figure class="role-icon product-designer"></figure>
-              <p class="headline-reduced">Product Designer</p>
+              <p class="section-subhead">Product Designer</p>
             </div>
             <div class="col-11 col-md-5 role">
               <figure class="role-icon ux-ui-designer"></figure>
-              <p class="headline-reduced">UX/UI Designer</p>
+              <p class="section-subhead">UX/UI Designer</p>
             </div>
             <div class="w-100 my-md-5"></div>
             <div class="col-11 col-md-5 role">
               <figure class="role-icon marketing"></figure>
-              <p class="headline-reduced">Marketer</p>
+              <p class="section-subhead">Marketer</p>
             </div>
             <div class="col-11 col-md-5 role">
               <figure class="role-icon speaker"></figure>
-              <p class="headline-reduced">Speaker</p>
+              <p class="section-subhead">Speaker</p>
             </div>
           </div>
         </div>
@@ -130,17 +130,91 @@
     </section>
     <hr>
     <section class="container section-align">
-      <div class="row">
-        <div class="col-12 text-center">
-          <p class="headline">
-            How does Tassu Passu work?
+      <div class="row justify-content-center">
+        <div class="col-11 text-center">
+          <h2 class="section-headline">
+            Challenge
+          </h2>
+        </div>
+        <div class="col-11 col-md-9">
+          <p class="section-intro">
+            To design a product that can be used by children, and thus, by anyone.
           </p>
         </div>
       </div>
-      <div class="row">
-        <div class="col">
-
-
+    </section>
+    <section class="container section-align">
+      <div class="row justify-content-center">
+        <div class="col-11 text-center">
+          <h2 class="section-headline">
+            Solution
+          </h2>
+        </div>
+        <div class="w-100"></div>
+        <div class="col-11 col-md-8 text-center">
+          <p class="section-intro">
+            A password manager for children & their parents to create a secure, memorable password through creating their own story made of emoji.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="design-process" class="container section-align">
+      <div class="row justify-content-center">
+        <div class="col-11 text-center">
+          <h2 class="section-headline">
+            The process
+          </h2>
+        </div>
+        <div class="col-11 col-md-6 col-xl-5">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title card-hedline">
+                Research
+              </h3>
+              <p class="card-text card-subhead">
+                Interviewing users to find pain points.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="w-100 my-5"></div>
+        <div class="col-11 col-md-6 col-xl-5">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title card-hedline">
+                Ideation
+              </h3>
+              <p class="card-text card-subhead">
+                Create several sketches and potential solutions.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="w-100 my-5"></div>
+        <div class="col-11 col-md-6 col-xl-5">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title card-hedline">
+                Design
+              </h3>
+              <p class="card-text card-subhead">
+                Design low fidelity wireframes.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="w-100 my-5"></div>
+        <div class="col-11 col-md-6 col-xl-5">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title card-hedline">
+                Test
+              </h3>
+              <p class="card-text card-subhead">
+                Prototype high fidelity mockups.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>

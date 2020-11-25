@@ -1,0 +1,32 @@
+.section-align {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.hero-subhead {
+    max-width: 1060px;
+}
+
+.hero-intro {
+    @extend %max-hero-intro-width;
+    margin: 0px auto 32px auto;
+    @media only screen and (max-width: 1020px) {
+        margin: 0px auto 25px auto;
+     }
+}
+
+.section-headline {
+    @extend %max-section-width;
+    padding: 30px;
+    @media only screen and (max-width: 1020px) {
+       padding: 18px;
+    }
+}
+
+.section-intro {
+    @extend %max-section-width;
+    margin: 0 auto;
+}

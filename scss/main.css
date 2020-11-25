@@ -1,0 +1,334 @@
+.hero-intro {
+  max-width: 800px;
+}
+
+.section-headline, .section-intro {
+  max-width: 1096px;
+}
+
+.section-align {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero-subhead {
+  max-width: 1060px;
+}
+
+.hero-intro {
+  margin: 0px auto 32px auto;
+}
+
+@media only screen and (max-width: 1020px) {
+  .hero-intro {
+    margin: 0px auto 25px auto;
+  }
+}
+
+.section-headline {
+  padding: 30px;
+}
+
+@media only screen and (max-width: 1020px) {
+  .section-headline {
+    padding: 18px;
+  }
+}
+
+.section-intro {
+  margin: 0 auto;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.section-align {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#hero-img img {
+  height: 80vh;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.fixed {
+  position: fixed;
+  z-index: 999;
+}
+
+#roles .role {
+  font-weight: 600;
+  letter-spacing: 0.007em;
+  padding: 0 3%;
+  line-height: 1.143;
+  text-align: left;
+}
+
+#roles .role p {
+  margin-top: 13px;
+}
+
+.role-icon {
+  height: calc(3vw + 3rem);
+  width: calc(3vw + 3rem);
+  position: relative;
+  -webkit-mask-size: contain;
+          mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  bottom: 0;
+  background-image: -webkit-gradient(linear, left top, right top, from(#f9717e), to(#fca747));
+  background-image: linear-gradient(90deg, #f9717e, #fca747);
+  background-color: #f9717e;
+  margin-top: 5%;
+}
+
+.ux-ui-designer {
+  -webkit-mask-image: url(../img/ux-ui-designer.svg);
+          mask-image: url(../img/ux-ui-designer.svg);
+  background-image: -webkit-gradient(linear, left top, right top, from(#b782e0), to(#f8707f));
+  background-image: linear-gradient(90deg, #b782e0, #f8707f);
+  background-color: #b782e0;
+}
+
+.speaker {
+  -webkit-mask-image: url(../img/speaker.svg);
+          mask-image: url(../img/speaker.svg);
+  background-image: -webkit-gradient(linear, left top, right top, from(#b782e0), to(#f8707f));
+  background-image: linear-gradient(90deg, #b782e0, #f8707f);
+  background-color: #b782e0;
+}
+
+.product-designer {
+  -webkit-mask-image: url(../img/product-designer.svg);
+          mask-image: url(../img/product-designer.svg);
+  background-image: -webkit-gradient(linear, left top, right top, from(#b782e0), to(#f8707f));
+  background-image: linear-gradient(90deg, #b782e0, #f8707f);
+  background-color: #b782e0;
+}
+
+.marketing {
+  -webkit-mask-image: url(../img/marketing.svg);
+          mask-image: url(../img/marketing.svg);
+  background-image: -webkit-gradient(linear, left top, right top, from(#b782e0), to(#f8707f));
+  background-image: linear-gradient(90deg, #b782e0, #f8707f);
+  background-color: #b782e0;
+}
+
+#design-process .card-body {
+  min-height: 500px;
+}
+
+body, html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #000000;
+}
+
+.hero-headline {
+  font-size: calc(54px + 66 * ( (100vw - 420px) / 480));
+  font-weight: 500;
+}
+
+@media screen and (max-width: 420px) {
+  .hero-headline {
+    font-size: 54px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .hero-headline {
+    font-size: 120px;
+  }
+}
+
+.hero-subhead {
+  font-size: calc(19px + 7 * ( (100vw - 420px) / 480));
+  font-weight: 500;
+  line-height: 1.32;
+}
+
+@media screen and (max-width: 420px) {
+  .hero-subhead {
+    font-size: 19px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .hero-subhead {
+    font-size: 26px;
+  }
+}
+
+.hero-intro {
+  font-size: calc(21px + 7 * ( (100vw - 420px) / 480));
+  font-weight: 500;
+  line-height: 1.15;
+}
+
+@media screen and (max-width: 420px) {
+  .hero-intro {
+    font-size: 21px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .hero-intro {
+    font-size: 28px;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  .hero-intro {
+    text-align: left;
+  }
+}
+
+.hero-cta {
+  font-size: calc(19px + 5 * ( (100vw - 420px) / 480));
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+@media screen and (max-width: 420px) {
+  .hero-cta {
+    font-size: 19px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .hero-cta {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  .hero-cta {
+    text-align: left;
+  }
+}
+
+.hero-cta svg {
+  vertical-align: sub;
+  width: calc(1em * 0.65);
+}
+
+.section-headline {
+  font-size: calc(40px + 40 * ( (100vw - 420px) / 480));
+  line-height: 1.067;
+  font-weight: 500;
+  letter-spacing: -.01em;
+}
+
+@media screen and (max-width: 420px) {
+  .section-headline {
+    font-size: 40px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .section-headline {
+    font-size: 80px;
+  }
+}
+
+.section-subhead {
+  font-size: calc(24px + 16 * ( (100vw - 420px) / 480));
+  line-height: 1.14;
+  font-weight: 600;
+  letter-spacing: .007em;
+}
+
+@media screen and (max-width: 420px) {
+  .section-subhead {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .section-subhead {
+    font-size: 40px;
+  }
+}
+
+.section-intro {
+  font-size: calc(19px + 5 * ( (100vw - 420px) / 480));
+  line-height: 1.3;
+  font-weight: 400;
+  letter-spacing: .009em;
+}
+
+@media screen and (max-width: 420px) {
+  .section-intro {
+    font-size: 19px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .section-intro {
+    font-size: 24px;
+  }
+}
+
+.card-headline {
+  font-size: calc(24px + 8 * ( (100vw - 420px) / 480));
+  line-height: 1.12;
+  font-weight: 700;
+  letter-spacing: 0em;
+}
+
+@media screen and (max-width: 420px) {
+  .card-headline {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .card-headline {
+    font-size: 32px;
+  }
+}
+
+.card-subhead {
+  font-size: calc(16px + 3 * ( (100vw - 420px) / 480));
+  line-height: 1.4;
+  font-weight: 600;
+  letter-spacing: .00023em;
+  color: #86868b;
+}
+
+@media screen and (max-width: 420px) {
+  .card-subhead {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .card-subhead {
+    font-size: 19px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

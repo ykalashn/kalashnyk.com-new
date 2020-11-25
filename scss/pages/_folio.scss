@@ -1,0 +1,101 @@
+// :root {
+//     --intro-headline: 10vw;
+//     --headline-font-size: 80px;
+//     --headline-reduced: 32px;
+//     --link-font-size: 28px;
+// }
+  
+body, html {
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+// Common
+
+.section-align {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+// .section-align-top {
+//     min-height: 100vh;
+//     display: flex;
+//     text-align: center;
+//     justify-content: center;
+// }
+
+#hero-img img {
+    height: 80vh;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.fixed {
+    position: fixed;
+    z-index: 999;
+}
+// HERO
+
+
+// ROLES
+
+#roles .role {
+    font-weight: 600;
+    letter-spacing: 0.007em;
+    padding: 0 3%;
+    line-height: 1.143;
+    text-align: left;  
+    p {
+        margin-top: 13px;
+    }
+}
+
+.role-icon {
+    height: calc(3vw + 3rem);
+    width: calc(3vw + 3rem);
+    position: relative;
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    bottom: 0;
+    background-image: linear-gradient(90deg, #f9717e, #fca747);
+    background-color: #f9717e;
+    margin-top: 5%;
+}
+
+.ux-ui-designer {
+    mask-image: url(../img/ux-ui-designer.svg);
+    background-image: linear-gradient(90deg, #b782e0, #f8707f);
+    background-color: #b782e0;
+}
+
+.speaker {
+    mask-image: url(../img/speaker.svg);
+    background-image: linear-gradient(90deg, #b782e0, #f8707f);
+    background-color: #b782e0;
+}
+
+.product-designer {
+    mask-image: url(../img/product-designer.svg);
+    background-image: linear-gradient(90deg, #b782e0, #f8707f);
+    background-color: #b782e0;
+}
+
+.marketing {
+    mask-image: url(../img/marketing.svg);
+    background-image: linear-gradient(90deg, #b782e0, #f8707f);
+    background-color: #b782e0;
+}
+
+
+// DESIGN PROCESS SECTION
+
+#design-process {
+    .card-body {
+        min-height: 500px;
+    }
+}
