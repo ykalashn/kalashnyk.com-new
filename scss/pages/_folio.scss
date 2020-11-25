@@ -1,32 +1,8 @@
-// :root {
-//     --intro-headline: 10vw;
-//     --headline-font-size: 80px;
-//     --headline-reduced: 32px;
-//     --link-font-size: 28px;
-// }
-  
 body, html {
     height: 100%;
     margin: 0;
     overflow-x: hidden;
 }
-
-// Common
-
-.section-align {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-}
-
-// .section-align-top {
-//     min-height: 100vh;
-//     display: flex;
-//     text-align: center;
-//     justify-content: center;
-// }
 
 #hero-img img {
     height: 80vh;
@@ -38,8 +14,7 @@ body, html {
 .fixed {
     position: fixed;
     z-index: 999;
-}
-// HERO
+}ß
 
 
 // ROLES
@@ -96,6 +71,6 @@ body, html {
 
 #design-process {
     .card-body {
-        min-height: 500px;
+        // min-height: 100%;
     }
 }

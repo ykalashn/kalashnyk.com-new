@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .hero-intro {
   max-width: 800px;
 }
@@ -54,20 +55,6 @@ body, html {
   overflow-x: hidden;
 }
 
-.section-align {
-  min-height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 #hero-img img {
   height: 80vh;
   display: block;
@@ -80,7 +67,7 @@ body, html {
   z-index: 999;
 }
 
-#roles .role {
+ß #roles .role {
   font-weight: 600;
   letter-spacing: 0.007em;
   padding: 0 3%;
@@ -88,7 +75,7 @@ body, html {
   text-align: left;
 }
 
-#roles .role p {
+ß #roles .role p {
   margin-top: 13px;
 }
 
@@ -137,10 +124,6 @@ body, html {
   background-image: -webkit-gradient(linear, left top, right top, from(#b782e0), to(#f8707f));
   background-image: linear-gradient(90deg, #b782e0, #f8707f);
   background-color: #b782e0;
-}
-
-#design-process .card-body {
-  min-height: 500px;
 }
 
 body, html {
