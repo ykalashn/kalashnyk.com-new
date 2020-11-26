@@ -20,7 +20,10 @@ section {
 }
 
 #hero-img {
-    background: $background-grey url(../../img/pages/folio/hero-back.png) no-repeat right;
+    background: $background-grey url(../../img/pages/folio/hero-back.svg) no-repeat center;
+    @media only screen and (max-width: 568px) {
+        background-image: url(../../img/pages/folio/hero-back-mobile.svg);
+    }
     background-size: contain;
     position: relative;
     z-index: 10;
@@ -86,12 +89,6 @@ section {
 
 
 // DESIGN PROCESS SECTION
-
-#design-process {
-    .card-body {
-        // min-height: 100%;
-    }
-}
 
 #design-process .card {
     background-color: $background-grey;
