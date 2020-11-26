@@ -8,6 +8,7 @@
 
 .hero-subhead {
     max-width: 1060px;
+    margin: 0 auto;
 }
 
 .hero-intro {
@@ -19,7 +20,6 @@
 }
 
 .section-headline {
-    @extend %max-section-width;
     padding: 30px;
     @media only screen and (max-width: 1020px) {
        padding: 18px;
@@ -29,8 +29,4 @@
 .section-intro {
     @extend %max-section-width;
     margin: 0 auto;
-}
-
-.role {
-    text-align: left;
 }

@@ -4,17 +4,36 @@ body, html {
     overflow-x: hidden;
 }
 
-#hero-img img {
-    height: 80vh;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
+section {
+    background-color: white;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    position: relative;
+    z-index: 1;
+}
+
+#hero {
+    position: sticky;
+    top: 0;
+    z-index: -10;
+    background-color: $background-grey;
+}
+
+#hero-img {
+    background: $background-grey url(../../img/pages/folio/hero-back.png) no-repeat right;
+    background-size: contain;
+    position: relative;
+    z-index: 10;
+}
+
+#roles {
+    background: $background-grey;
 }
 
 .fixed {
     position: fixed;
     z-index: 999;
-}ß
+}
 
 
 // ROLES
@@ -22,9 +41,8 @@ body, html {
 #roles .role {
     font-weight: 600;
     letter-spacing: 0.007em;
-    padding: 0 3%;
+    padding: 3% 0;
     line-height: 1.143;
-    text-align: left;  
     p {
         margin-top: 13px;
     }
@@ -39,7 +57,7 @@ body, html {
     bottom: 0;
     background-image: linear-gradient(90deg, #f9717e, #fca747);
     background-color: #f9717e;
-    margin-top: 5%;
+    margin: 5% auto 0;
 }
 
 .ux-ui-designer {
@@ -73,4 +91,17 @@ body, html {
     .card-body {
         // min-height: 100%;
     }
+}
+
+#design-process .card {
+    background-color: $background-grey;
+    border: none;
+    border-radius: 30px;
+    margin-bottom: 75px;
+    @media only screen and (max-width: 1020px) {
+        border-radius: 20px;
+     }
+
+    padding-top: 7%;
+    padding-bottom: 7%;
 }
